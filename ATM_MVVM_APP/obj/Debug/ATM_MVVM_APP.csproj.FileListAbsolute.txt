@@ -1,0 +1,17 @@
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\bin\Debug\ATM_MVVM_APP.exe.config
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\bin\Debug\ATM_MVVM_APP.exe
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\bin\Debug\ATM_MVVM_APP.pdb
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\MainWindow.g.cs
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\Views\CustomerView.g.cs
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\App.g.cs
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP_MarkupCompile.cache
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP_MarkupCompile.lref
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\MainWindow.baml
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\Views\CustomerView.baml
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.g.resources
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.Properties.Resources.resources
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.csproj.GenerateResource.cache
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.csproj.CoreCompileInputs.cache
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.exe
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.pdb

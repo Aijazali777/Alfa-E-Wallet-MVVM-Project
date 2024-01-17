@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="ATM_MVVM_APP.Views.CustomerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ATM_MVVM_APP.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="800">
+    
+
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#007ACC" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="#005580" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="Width" Value="120" />
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontWeight" Value="Black"/>
+            <Setter Property="Width" Value="200" />
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="BorderBrush" Value="#007ACC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#F5F5F5"/>
+            <Setter Property="Foreground" Value="#333333"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="#595F72">
+        <StackPanel>
+            <TextBlock Name="TxtWelcome" Text="" TextAlignment="Center" FontSize="25" Margin="20" Width="400"/>
+            <TextBlock Name="TxtSignupResponse" Margin="15"  Width="500" TextAlignment="Center"/>
+            <TextBlock Name="TxtMainOption" TextAlignment="Center" Width="500"/>
+
+            <StackPanel Name="SPMainChoice" Orientation="Vertical" Margin="10">
+                <Button Name="BtnExistingUser" Content="Existing User" Click="ExistingUser"/>
+                <Button Name="BtnNewUser" Content="New User" Click="NewUser"/>
+            </StackPanel>
+            
+            <StackPanel Name="SPLogin" Orientation="Vertical">
+                <TextBlock Name="TxtAccountNum" Text="Enter account number" Width="200"/>
+                <TextBox Name="FldAccountNum" Text="{Binding Path=CurrentCustomer.AccountNumber}"/>
+                <TextBlock Name="TxtPassword" Text="Enter password" Width="200"/>
+                <TextBox Name="FldPassword" Text="{Binding Path=CurrentCustomer.Password}"/>
+                <Button Name="BtnLogin" Content="Login" Click="Clicklogin" Margin="10"/>
+                <TextBlock Name="TxtResponse" Width="300" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Name="SPSignUp" Orientation="Vertical">
+                <TextBlock Name="TxtNewAccountNum" Text="Enter account number"/>
+                <TextBox Name="FldNewAccountNum" Text="{Binding Path=CurrentCustomer.AccountNumber}"/>
+                <TextBlock Name="TxtNewPassword" Text="Enter password"/>
+                <TextBox Name="FldNewPassword" Text="{Binding Path=CurrentCustomer.Password}"/>
+                <TextBlock Name="TxtNewName" Text="Enter name"/>
+                <TextBox Name="FldNewName" Text="{Binding Path=CurrentCustomer.Name}"/>
+                <TextBlock Name="TxtNewBalance" Text="Enter an amount"/>
+                <TextBox Name="FldNewBalance" Text="{Binding Path=CurrentCustomer.Balance}"/>
+                <Button Name="BtnSignup" Content="SignUp" Click="ClickSignUp" Margin="10"/>
+            </StackPanel>
+
+            <StackPanel Name="SPMenu" Orientation="Vertical">
+                <TextBlock Name="TxtOption" Text="Please select any option to process..." TextAlignment="Center" Width="300"/>
+                <Button Name="BtnDeposit" Content="Deposit" Click="ClickDeposit"/>
+                <Button Name="BtnWithdraw" Content="Withdraw" Click="ClickWithdraw"/>
+                <Button Name="BtnShowBalance" Content="Show Balance" Click="ClickShowBalance"/>
+                <Button Name="BtnExit" Content="Exit" Click="ClickExit"/>
+            </StackPanel>
+            
+            <StackPanel  Name="SPDepositAndWithdraw" Orientation="Vertical">
+                <TextBox Name="FldAmount" Text="{Binding Path=CurrentCustomer.Balance}"/>
+                <Button Name="BtnDone" Content="Deposit" Click="ClickDone" Margin="10"/>
+            </StackPanel>
+            
+            <TextBlock Name="TxtBalance" Width="300" TextAlignment="Center"/>
+            <Button Name="BtnBack" Content="Back" Click="ClickBack" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
