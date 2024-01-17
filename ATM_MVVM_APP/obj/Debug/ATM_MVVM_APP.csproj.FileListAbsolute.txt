@@ -15,3 +15,4 @@ C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.cs
 C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.csproj.CoreCompileInputs.cache
 C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.exe
 C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.pdb
+C:\Users\aaijaz\source\repos\ATM_MVVM_APP\ATM_MVVM_APP\obj\Debug\ATM_MVVM_APP.csprojAssemblyReference.cache

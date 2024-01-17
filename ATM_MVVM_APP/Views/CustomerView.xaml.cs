@@ -57,6 +57,8 @@ namespace ATM_MVVM_APP.Views
 
             TxtMainOption.Text = "Login";
             TxtResponse.Text = "";
+            FldAccountNum.Text = "";
+            FldPassword.Text = "";
         }
 
         private void NewUser(object sender, RoutedEventArgs e)
@@ -65,6 +67,10 @@ namespace ATM_MVVM_APP.Views
             SPSignUp.Visibility = Visibility.Visible;
 
             TxtMainOption.Text = "SignUp";
+            FldNewAccountNum.Text = "";
+            FldNewPassword.Text = "";
+            FldNewName.Text = "";
+            FldNewBalance.Text = "";
             TxtSignupResponse.Text = "";
             TxtSignupResponse.Visibility = Visibility.Visible;
         }
@@ -134,6 +140,7 @@ namespace ATM_MVVM_APP.Views
         {
             SPLogin.Visibility = Visibility.Collapsed;
             SPMenu.Visibility = Visibility.Visible;
+            FldAmount.Text = "";
             TxtMainOption.Text = "Welcome " + ViewModel.currentCustomerName + " :) ";
         }
 
@@ -203,6 +210,7 @@ namespace ATM_MVVM_APP.Views
                     TxtBalance.Visibility = Visibility.Collapsed;
                     SPDepositAndWithdraw.Visibility = Visibility.Visible;
                 }
+                ViewModel.CurrentCustomer.Balance = 0;
 
             }
             else if (isBtnWithDrawClicked)
@@ -228,6 +236,7 @@ namespace ATM_MVVM_APP.Views
                     TxtBalance.Visibility = Visibility.Collapsed;
                     SPDepositAndWithdraw.Visibility = Visibility.Visible;
                 }
+                ViewModel.CurrentCustomer.Balance = 0;
             }
             else if (isBtnShowBalanceClicked)
             {

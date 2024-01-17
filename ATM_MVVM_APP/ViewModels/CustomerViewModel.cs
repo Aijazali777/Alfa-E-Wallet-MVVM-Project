@@ -17,6 +17,8 @@ namespace ATM_MVVM_APP.ViewModels
         public CustomerViewModel()
         {
             CurrentCustomer = new Customer();
+            CurrentCustomer.AccountNumber = null;
+            CurrentCustomer.Password = "";
             desCustomer = CurrentCustomer.deserilization();
         }
 
